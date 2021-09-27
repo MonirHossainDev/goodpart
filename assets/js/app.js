@@ -1,14 +1,31 @@
 $(document).ready(function () {
-  $(".text-content-slider").slick({
-    autoplay: true,
-    dots: false,
-    fade: true,
-    infinite: true,
-    arrows: false,
-    autoplaySpeed: 500,
+  var aplandWindow = $(window);
+  var $scrollTopBtn = $("#scrollTopBtn");
+
+  aplandWindow.on("scroll", function () {
+    if (aplandWindow.scrollTop() > 0) {
+      $(".header").addClass("header-sticky");
+    } else {
+      $(".header").removeClass("header-sticky");
+    }
   });
 
-  $(".heder-toggler").click(function () {
-    $("body").toggleClass("menu-active");
+  // Show Scroll Top Button
+  aplandWindow.on("scroll", function () {
+    if ($(this).scrollTop() > 400) {
+      $scrollTopBtn.addClass("actived");
+    } else {
+      $scrollTopBtn.removeClass("actived");
+    }
+  });
+
+  // Animate Body after Clicking on Scroll Top Button
+  $scrollTopBtn.on("click", function () {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      500
+    );
   });
 });

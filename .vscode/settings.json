@@ -1,6 +1,15 @@
 {
- "files.autoSave": "afterDelay",
- "editor.formatOnPaste": true,
- "editor.formatOnType": true,
- "editor.defaultFormatter": "HookyQR.beautify"
+  "files.autoSave": "afterDelay",
+  "editor.formatOnPaste": true,
+  "[php]": {
+    "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "phpfmt.php_bin": "\"C:\\xampp\\php\\php.exe\"",
+  "phpfmt.enable_auto_align": true,
+  "phpformatter.composer": true,
+  "phpformatter.phpPath": "\"C:\\xampp\\php\\php.exe\""
 }

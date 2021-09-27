@@ -1,0 +1,171 @@
+body {
+  line-height: 1.5;
+  color: #555;
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #444;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0 0 30px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  border-bottom: 1px solid #f5f5f5;
+  padding: 20px 0;
+  z-index: 9999 !important;
+  background-color: #ffffff;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+}
+
+.logo a {
+  color: #1abc9c;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu ul li {
+  display: inline-block;
+}
+
+.main-menu ul a {
+  display: block;
+  line-height: 22px;
+  padding: 14px 5px;
+  color: #444;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  transition: ease all 0.3s;
+}
+
+.main-menu ul a:hover {
+  color: #1abc9c;
+}
+
+.content {
+  padding: 100px 0;
+}
+
+.sticky {
+  position: sticky;
+  top: 150px;
+  transition: ease all 0.3s;
+}
+
+.widget-title {
+  margin-bottom: 25px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.sidebar-sticky {
+  position: fixed;
+  width: 260px;
+}
+
+.header-sticky {
+  position: fixed;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  z-index: 9999 !important;
+  background-color: #ffffff;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+}
+
+#scrollTopBtn {
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  width: 45px;
+  height: 45px;
+  opacity: 0;
+  z-index: 1000;
+  font-size: 20px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #333;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  line-height: 45px;
+  text-align: center;
+}
+
+#scrollTopBtn.actived {
+  right: 30px;
+  opacity: 1;
+}
+
+.footer {
+  background-color: #282828;
+  padding-top: 80px;
+}
+.footer-logo {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+@media (max-width: 991px) {
+  .main-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 991px) {
+  .menu-troggler {
+    display: none;
+  }
+}
+
+.page-title {
+  padding: 100px 0;
+  background-color: #f1f1f1;
+}
+
+.page-title h2 {
+  font-weight: 700;
+  padding: 1.5rem 0;
+}
+
+.subtitle {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+}
